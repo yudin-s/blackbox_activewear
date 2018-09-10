@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Blackbox_Activewear>
+            <version>0.2</version>
+        </Blackbox_Activewear>
+    </modules>
+    <global>
+        <helpers>
+            <blackbox_Activewear>
+                <class>Blackbox_Activewear_Helper</class>
+            </blackbox_Activewear>
+        </helpers>
+        <models>
+            <blackbox_activewear>
+                <class>Blackbox_Activewear_Model</class>
+            </blackbox_activewear>
+        </models>
+        <suppliers>
+            <activewear>
+                <class>blackbox_activewear/api_web</class>
+            </activewear>
+        </suppliers>
+        <resources>
+            <activewear_setup>
+                <setup>
+                    <module>Blackbox_Activewear</module>
+                    <class>Mage_Eav_Model_Entity_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </activewear_setup>
+        </resources>
+    </global>
+</config>
